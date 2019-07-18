@@ -5,7 +5,8 @@ This is a bot that will click on a link and fill out your specified information.
 - Python 3.7
 - Chrome Version 75
 
-This project is still a work in progress
+This project is still a work in progress.
+
 Everything up to entering your information in the form is working.
 
 #### Things still needed:
