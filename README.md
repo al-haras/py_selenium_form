@@ -1,14 +1,16 @@
 ## Form Bot
 This is a bot that will click on a link and fill out your specified information.
 
-- Python 3
+### Tested on:
+- Python 3.7
 - Chrome Version 75
 
-### This project is still a work in progress
+This project is still a work in progress
 Everything up to entering your information in the form is working.
 
 #### Things still needed:
 - Specific form xpaths needed to finish the full project.
+- May add Mac webdriver since it would take virtually no work
 - May remove the chromedriver* from directory to allow people to swap to different versions easily based on what they have, but it would require them to manually update the filename for the Webdriver version.
 
 This specific tool is designed to be used to enter a specific raffle that is only open for two-five minutes randomly.
@@ -17,5 +19,4 @@ The format of these specific raffles has sort of changed and trivia is sometimes
 
 If you need to edit the form for things such as address besides PayPal, it should be easy to add in info.py and find the xpath to send the text to by modifying the etf_(either).py
 
-You must have Selenium installed before running.
-```pip3 install selenium```
+You must have Selenium installed via pip or pip3 before running.
