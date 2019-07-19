@@ -32,9 +32,11 @@ The same applies for Username Selection. The you can specify using the correspon
 
 ## Other Versions of Chrome
 
-If you are running a different version of Chrome, you should be able to easily swap the driver for the version you are using. You can get the version needed from https://sites.google.com/a/chromium.org/chromedriver/downloads. Download the webdriver you need to the working directory. You may or may not need to update the name of the new driver depending on which version you get. If it is not the same as the script you plan on running you will change it in the platform you are running on here:
+If you are running a different version of Chrome, you should be able to easily swap the driver for the version you need. You can get the version needed from: https://sites.google.com/a/chromium.org/chromedriver/downloads. Download the webdriver you need to the working directory. You may or may not need to update the name of the new driver depending on which version you get. If it is not the same name as listed in the script, you will change it here:
 
 ```driverPath = os.path.join(os.getcwd(), 'new_driver_you_downloaded')```
+
+Be sure to double-check that you are updating this field in the correct platform you are on. (Linux, Windows)
 
 ## Possible Future Plans:
 - May add options to use Chrome or Firefox since I primarily use Firefox. This was built with Chrome as most people seem to use Chrome.
