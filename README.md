@@ -8,6 +8,8 @@ This is a bot that will click on a link and fill out your specified information.
 
 ## Using the bot
 
+Selenium must first be installed via Python before running these scripts.
+
 To function properly, this bot requires you to edit the info.py with your correct information. You will need to provide the following:
 - Username
 - PayPal Email Address

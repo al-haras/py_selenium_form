@@ -14,7 +14,7 @@ elif platform.system()=='Windows':
 elif platform.system()=='Darwin':
     driverPath = os.path.join(os.getcwd(), 'chromedriver_mac')
 else:
-    print("You do not be running Linux, Windows, or Mac")
+    print("You do not appear to be running Linux, Windows, or Mac")
     input("Press any key to Exit")
 
 # URL
