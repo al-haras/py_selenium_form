@@ -20,15 +20,24 @@ In the ```etf_gh.py``` and/or ```etf_insta.py```, you can specify how the form g
 An example of a scenario where you would want international shipping and specify an address that is not used by PayPal you would do the following:
 
 Remove:
+
 ```driver.find_element_by_xpath(xpaths.shippingUS).click()```
 
 Replace with:
+
 ```driver.find_element_by_xpath(xpaths.shippingINT).click()```
 ```driver.find_element_by_xpath(xpaths.shippingInfo).send_keys(info.shippingAddress)```
 
 The same applies for Username Selection. The you can specify using the corresponding button listed in the ```xpaths.py``` file.
 
-### Possible Future Plans:
+## Other Versions of Chrome
+
+If you are running a different version of Chrome, you should be able to easily swap the driver for the version you are using. You can get the version needed from https://sites.google.com/a/chromium.org/chromedriver/downloads. Download the webdriver you need to the working directory. You may or may not need to update the name of the new driver depending on which version you get. If it is not the same as the script you plan on running you will change it in the platform you are running on here:
+
+```driverPath = os.path.join(os.getcwd(), 'new_driver_you_downloaded')```
+
+## Possible Future Plans:
 - May add options to use Chrome or Firefox since I primarily use Firefox. This was built with Chrome as most people seem to use Chrome.
 - May add Mac Support as it would be a few more lines of code and another driver in the repo
 - Containerization (Docker) of script.
+
