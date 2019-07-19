@@ -40,6 +40,5 @@ Be sure to double-check that you are updating this field in the correct platform
 
 ## Possible Future Plans:
 - May add options to use Chrome or Firefox since I primarily use Firefox. This was built with Chrome as most people seem to use Chrome.
-- May add Mac Support as it would be a few more lines of code and another driver in the repo
 - Containerization (Docker) of script.
 

@@ -11,6 +11,11 @@ if platform.system()=='Linux':
     driverPath = os.path.join(os.getcwd(), 'chromedriver')
 elif platform.system()=='Windows':
     driverPath = os.path.join(os.getcwd(), 'chromedriver74.exe')
+elif platform.system()=='Darwin':
+    driverPath = os.path.join(os.getcwd(), 'chromedriver_mac')
+else:
+    print("You do not be running Linux, Windows, or Mac")
+    input("Press any key to Exit")
 
 # URL
 etfURL = 'https://geekhack.org/index.php?topic=79513.0'
@@ -30,7 +35,7 @@ while not form:
         driver.implicitly_wait(5)
         driver.refresh()
 
-# Form Interaction
+# Form Interaction - This can be modified to add whatever information you want.
 driver.find_element_by_xpath(xpaths.userPath).send_keys(info.username)
 driver.find_element_by_xpath(xpaths.geekhackButton).click()
 driver.find_element_by_xpath(xpaths.emailPath).send_keys(info.email)
