@@ -16,6 +16,7 @@ elif platform.system()=='Darwin':
 else:
     print("You do not appear to be running Linux, Windows, or Mac")
     input("Press any key to Exit")
+    exit()
 
 # URL
 etfURL = 'https://geekhack.org/index.php?topic=79513.0'
